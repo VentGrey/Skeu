@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Skeu Dark
+Comment=GTK Theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Skeu Dark
+MetacityTheme=Skeu Dark
+IconTheme=Marwaita-Dark
+CursorTheme=Marwaita
+CursorSize=24
