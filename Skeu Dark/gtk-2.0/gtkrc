@@ -220,9 +220,9 @@ style "murrine-menu-item"
   xthickness = 0
   ythickness = 4
 
-	bg[PRELIGHT] = shade(3.0,@bg_color)
+	bg[PRELIGHT] = shade(2.5,@bg_color)
 	fg[PRELIGHT] = @fg_color
-	bg[SELECTED] = shade(3.0,@bg_color)
+	bg[SELECTED] = shade(2.5,@bg_color)
 	fg[SELECTED] = @fg_color
 
 	text[NORMAL]	= @fg_color
@@ -242,8 +242,8 @@ engine "murrine"
 
 style "murrine-menubar-item" = "murrine-menu-item"
 {
-	bg[SELECTED] = shade(3.0,@bg_color)
-	bg[PRELIGHT] = shade(3.0,@bg_color)
+	bg[SELECTED] = shade(2.0,@bg_color)
+	bg[PRELIGHT] = shade(2.0,@bg_color)
 	fg[SELECTED] = @fg_color
 	fg[PRELIGHT] = @fg_color
 
