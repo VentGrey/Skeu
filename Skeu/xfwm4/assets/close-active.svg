@@ -13,7 +13,7 @@
    version="1.1"
    id="svg12"
    sodipodi:docname="close-active.svg"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
   <metadata
      id="metadata18">
     <rdf:RDF>
@@ -22,6 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,23 +37,24 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1472"
-     inkscape:window-height="695"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
      id="namedview14"
      showgrid="false"
      inkscape:zoom="7.375"
-     inkscape:cx="29.355932"
-     inkscape:cy="14.711864"
+     inkscape:cx="-18.983053"
+     inkscape:cy="14.305084"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg12" />
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg12"
+     inkscape:document-rotation="0" />
   <rect
      width="32"
      height="32"
      fill="#E0E0E0"
      id="rect2"
-     style="fill:#dadada;fill-opacity:1" />
+     style="fill:#cfcfcf;fill-opacity:1" />
   <rect
      width="32"
      height="1"
@@ -74,4 +76,31 @@
        d="M21 12.41L19.59 11 16 14.59 12.41 11 11 12.41 14.59 16 11 19.59 12.41 21 16 17.41 19.59 21 21 19.59 17.41 16z"
        id="path8" />
   </g>
+  <rect
+     y="31"
+     x="0"
+     width="32"
+     height="1"
+     fill="#FFFFFF"
+     fill-opacity="0.4"
+     id="rect166"
+     style="fill:#969696;fill-opacity:1" />
+  <rect
+     y="30"
+     x="0"
+     width="32"
+     height="1"
+     fill="#FFFFFF"
+     fill-opacity="0.4"
+     id="rect166-5"
+     style="fill:#fdfdfd;fill-opacity:1;opacity:0.5" />
+  <rect
+     y="1"
+     x="1.9073486e-06"
+     width="32"
+     height="1"
+     fill="#FFFFFF"
+     fill-opacity="0.4"
+     id="rect166-0"
+     style="fill:#ffffff;fill-opacity:1;opacity:0.5" />
 </svg>
