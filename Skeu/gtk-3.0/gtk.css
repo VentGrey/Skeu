@@ -2367,7 +2367,7 @@ infobar.info > label, infobar.info, infobar.info button{color: mix(@success_colo
  infobar.question > label, infobar.question, infobar.question button{color: @selected_fg_color;}
   infobar.warning > label, infobar.warning, infobar.warning button{color: mix(@warning_color,@fg_color,0.5);}
    infobar.error > label, infobar.error, infobar.error button {color: @selected_fg_color;}
-   infobar label:disabled{color: @insensitive_fg_color;}
+   infobar label:disabled{color: alpha(currentcolor,0.5);}
 
 infobar button,
 infobar button:hover,
