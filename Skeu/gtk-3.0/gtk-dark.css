@@ -367,6 +367,7 @@ button.flat, button.sidebar-button ,headerbar button.titlebutton, .titlebar butt
   transition: none;
   color: inherit;
   border-radius: 9999px;
+  -gtk-outline-radius: 9999px;
 }
 
 button.flat:hover, button.sidebar-button:hover ,headerbar button.titlebutton:hover, .titlebar button.titlebutton:hover,.titlebar button:not(.suggested-action):not(.destructive-action):not(.titlebutton):not(.text-button):hover,spinbutton.horizontal button:hover {
@@ -1467,11 +1468,12 @@ notebook.frame {
 }
 
 notebook header {
-    background-color: @bg_color;
+    background-color: @sidebar_color;
     background-image: image(transparent);
     border-radius: 0;
-    border: none;
+    border: 1px solid @borders;
 }
+
 notebook > header.top {
   padding-bottom: 0;
   border-bottom: 1px solid @borders;
@@ -1507,19 +1509,19 @@ notebook > header.bottom > tabs > tab:first-child{ margin-left:6px;}
 notebook > header.left > tabs > tab:first-child,
 notebook > header.right > tabs > tab:first-child{ margin-top: 6px;}
 
-notebook tab:hover{background-color: alpha(@fg_color,0.05);}
+notebook tab:hover{}
 
 notebook > header.top > tabs > tab:hover:not(:checked) {
-box-shadow:  1px 0 @borders, -1px 0 @borders, inset 0 1px @borders;
+box-shadow:  none;
 }
 notebook > header.bottom > tabs > tab:hover:not(:checked) {  
-box-shadow: -1px 0 @borders, 1px 0 @borders, 0 1px @borders, inset 0 -1px @borders;
+box-shadow:  none;
 }
 notebook > header.left > tabs > tab:hover:not(:checked) {  
-box-shadow:  0 1px @borders, 0 -1px @borders, -1px 0 @borders, inset 1px 0 @borders;
+box-shadow:  none;
  }
 notebook > header.right > tabs > tab:hover:not(:checked) {
-box-shadow:  0 1px @borders, 0 -1px @borders, 1px 0 @borders, inset -1px 0 @borders ;
+box-shadow:  none;
 }
 
 notebook tab:checked {
@@ -1533,16 +1535,16 @@ notebook tab:checked {
 }
 
 notebook > header.top > tabs > tab:checked {
-box-shadow: 0 1px @tab_base_color, 1px 0 @borders, -1px 0 @borders, inset 0 1px @borders;
+box-shadow: 0 1px @tab_base_color, 1px 0 @borders, -1px 0 @borders;
 }
 notebook > header.bottom > tabs > tab:checked {  
-box-shadow: 0 -1px @tab_base_color, -1px 0 @borders, 1px 0 @borders, 0 1px @borders, inset 0 -1px @borders;
+box-shadow: 0 -1px @tab_base_color, -1px 0 @borders, 1px 0 @borders, 0 1px @borders;
 }
 notebook > header.left > tabs > tab:checked {  
-box-shadow: 1px 0 @tab_base_color, 0 1px @borders, 0 -1px @borders, -1px 0 @borders, inset 1px 0 @borders;
+box-shadow: 1px 0 @tab_base_color, 0 1px @borders, 0 -1px @borders, -1px 0 @borders;
  }
 notebook > header.right > tabs > tab:checked {
-box-shadow: -1px 0 @tab_base_color, 0 1px @borders, 0 -1px @borders, 1px 0 @borders, inset -1px 0 @borders ;
+box-shadow: -1px 0 @tab_base_color, 0 1px @borders, 0 -1px @borders, 1px 0 @borders;
 }
 
 notebook tab > image {
@@ -2161,7 +2163,7 @@ calendar.highlight {
  * Sidebars *
  ************/
 
-list row.activatable:selected,stack revealer viewport list row.activatable:selected,dialog filechooser list row.activatable:selected{ box-shadow: inset 0 1px 2px alpha(@shadow,0.5), inset 0 -1px @highlight;}
+list row.activatable:selected,stack revealer viewport list row.activatable:selected,dialog filechooser list row.activatable:selected{ }
 
 .sound-devices  row.activatable:selected  {box-shadow: none; padding: 0 12px;}
 popover list row.activatable:selected,dialog list row.activatable:selected,.vertical frame list row.activatable:selected{box-shadow: none;}
@@ -3904,7 +3906,7 @@ UnityPanelWidget, .unity-panel {
 @define-color wbg alpha(@fg_color,0.15);
 @define-color invertbg alpha(black,0.1);
 @define-color panel_bg black;
-@define-color panel_fg @fg_color;
+@define-color panel_fg white;
 @define-color scrollbar_color mix(@bg_color,@fg_color,0.5);
 
 @define-color colorPrimary shade(@bg_color,1.4);
